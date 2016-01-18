@@ -7,9 +7,11 @@
 ## How to Run The Poisoning Program
 1. Make sure that you have the latest version of libpcap and java sdk.
 2. From the command line, change the current directory to the directory of the poison.class ﬁle.
-3. Execute the following command: (sudo java poison -ipsrc=<spoofed IP source> -ipdst=<destination IP>
+3. Execute the following command: 
+(sudo java poison -ipsrc=<spoofed IP source> -ipdst=<destination IP>
 -hardsrc=<source MAC address> -harddst=<destination MAC address> -intf=<0 for eth0 or 1
-for wlan0>) The source IP and destination IP are mandatory ﬁelds, all others are optional.  The
+for wlan0>)
+The source IP and destination IP are mandatory ﬁelds, all others are optional.  The
 default value for the interface is eth0, for the hardsrc is the interface’s MAC and broadcast for the
 harddst.
 
