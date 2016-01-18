@@ -22,14 +22,15 @@ timeout is 10 seconds.
 
 ## ARP Cache Poisoning Methods
 Three methods were used to poison the cache:
-1. *ARP  request  attack:*  an ARP request packet is sent with the spoofed IP (i.e the stolen IP
+
+1. **ARP  request  attack:**  an ARP request packet is sent with the spoofed IP (i.e the stolen IP
 address)  as  the  source  IP  and  with  the  MAC  address  of  the  attacker  as  the  hardware  source
 address.   The destination IP address is that of the machine to be poisoned.   If no destination
 hardware address is speciﬁed, the packet is broadcasted.
-2. *ARP reply attack:* an ARP reply packet is sent with the spoofed IP (i.e the stolen IP address)
+2. **ARP reply attack:** an ARP reply packet is sent with the spoofed IP (i.e the stolen IP address)
 as the source IP and with the MAC address of the attacker as the hardware source address.  The
 reply is broadcasted.
-3. *ARP gratuitous attack:* an ARP reply packet is boadcasted with the spoofed IP as the source
+3. **ARP gratuitous attack:** an ARP reply packet is boadcasted with the spoofed IP as the source
 and destination protocol address.
 
 ## Detection Approach
