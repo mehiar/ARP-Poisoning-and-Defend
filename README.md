@@ -6,20 +6,20 @@
 
 ## How to Run The Poisoning Program
 1. Make sure that you have the latest version of libpcap and java sdk.
-2. From the command line, change the current directory to the directory of the poison.class ﬁle.
+2. From the command line, change the current directory to the directory of the 'poison.class' ﬁle.
 3. Execute the following command: 
-(sudo java poison -ipsrc=<spoofed IP source> -ipdst=<destination IP>
+`sudo java poison -ipsrc=<spoofed IP source> -ipdst=<destination IP>
 -hardsrc=<source MAC address> -harddst=<destination MAC address> -intf=<0 for eth0 or 1
-for wlan0>)
+for wlan0>`
 The source IP and destination IP are mandatory ﬁelds, all others are optional.  The
 default value for the interface is eth0, for the hardsrc is the interface’s MAC and broadcast for the
 harddst.
 
 ## How to Run the Defend Program
 1. Make sure that you have the latest version of libpcap and java sdk.
-2. From the command line, change the current directory to the directory of the defend.class file.
-3. Execute the following command: (sudo java defend -intf=<0 for eth0 or 1 for wlan0> -timeout=<timeout
-in seconds>) Both ﬁelds are optional and the default value for interface is eth0 and the default for
+2. From the command line, change the current directory to the directory of the 'defend.class' file.
+3. Execute the following command: `sudo java defend -intf=<0 for eth0 or 1 for wlan0> -timeout=<timeout
+in seconds>` Both ﬁelds are optional and the default value for interface is eth0 and the default for
 timeout is 10 seconds.
 
 ## ARP Cache Poisoning Methods
@@ -47,3 +47,6 @@ the attacker is trying to claim that he has a diﬀerent non-existing IP address
 alarms should be generated. Also, the ammount of traﬃc created by this defence mechanism is not large
 since we don’t send ARP requests if the entry already exists. The defence system maitains a log ﬁle that
 contains all attacks.
+
+## Documentation
+The 'summary.pdf' file under the 'Doc' folder contains snapshots that demonstrate how our tools work.
