@@ -1,8 +1,8 @@
 # ARP-Poisoning-and-Defend
 
 ## Prerequisite
-* java sdk
-* libpcap
+* [java sdk](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [libpcap](http://www.tcpdump.org/)
 
 ## How to Run The Poisoning Program
 1. Make sure that you have the latest version of libpcap and java sdk.
@@ -49,4 +49,4 @@ since we don’t send ARP requests if the entry already exists. The defence syst
 contains all attacks.
 
 ## Documentation
-The 'summary.pdf' file under the 'Doc' folder contains snapshots that demonstrate how our tools work.
+The '[summary.pdf](https://github.com/mehiar/ARP-Poisoning-and-Defend/blob/master/Doc/summary.pdf)' file contains snapshots that demonstrate how our tools work.
